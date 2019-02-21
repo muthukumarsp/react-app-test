@@ -90,7 +90,7 @@ class AllUsersPage extends Component {
             </Toolbar>
           </AppBar>
           <div className={classes.searchContainer}>
-            <SearchInputBox
+            <SearchInputBox data-testid="search-input"
               onChange={e => {
                 this.handleUserInput(e);
               }}
