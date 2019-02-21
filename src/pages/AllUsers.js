@@ -57,7 +57,6 @@ class AllUsersPage extends Component {
   fuse = new Fuse(AllUserData, this.options);
 
   handleUserInput(e) {
-    console.debug(this.fuse.search(e.target.value));
     if (e.target.value.trim()) {
       let searchedList = this.fuse.search(e.target.value.trim());
       this.setState({
